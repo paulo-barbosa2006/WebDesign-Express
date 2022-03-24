@@ -13,11 +13,16 @@
     <header>
         <div class="header-container">
             <h2>Logomarca</h2>
-            <ul class="nav">
+            <ul data-visible="false" class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Sobre</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
+            <div class="hamburguer" aria-controls="nav-links" aria-expanded="false">
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+                <div class="linha3"></div>
+            </div>
         </div>
     </header>
     <main>
@@ -73,7 +78,7 @@
             </div>
         </section>
         <section style="background-color: var(--cor02);">
-            <div class="form">
+            <div class="form-container">
                 <div class="conteudo">
                     <div class="form-group">
                         <h3>Lorem Ipsum Form</h3>
@@ -84,18 +89,30 @@
             </div>
         </section>
         <section>
-            <div class="">
-                <img src="img/menina.webp" alt="WebDesign Express">
-                <h2>Lorem Ipsum</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eaque possimus itaque a provident accusamus, consequatur quasi natus perspiciatis dicta maiores pariatur officiis quod dolore est magnam nemo impedit maxime.</p>
-                <img src="img/menina.webp" alt="WebDesign Express">
-                <h2>Lorem Ipsum</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eaque possimus itaque a provident accusamus, consequatur quasi natus perspiciatis dicta maiores pariatur officiis quod dolore est magnam nemo impedit maxime.</p>
-                <img src="img/menina.webp" alt="WebDesign Express">
-                <h2>Lorem Ipsum</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eaque possimus itaque a provident accusamus, consequatur quasi natus perspiciatis dicta maiores pariatur officiis quod dolore est magnam nemo impedit maxime.</p>
+            <div class="img-container">
+                <div class="img-row">
+                    <div class="column">
+                        <img src="img/menina.webp" alt="WebDesign Express">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Velit eaque possimus itaque a provident accusamus..</p>
+                    </div>
+                    <div class="column">
+                        <img src="img/menina.webp" alt="WebDesign Express">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Velit eaque possimus itaque a provident accusamus.</p>
+                    </div>
+                    <div class="column">
+                        <img src="img/menina.webp" alt="WebDesign Express">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Velit eaque possimus itaque a provident accusamus.</p>
+                    </div>
+                </div>
             </div>
         </section>
+        <section style="background-color: var(--cor02);">
+            
+        </section>
     </main>
+    <script src="main.js"></script>
 </body>
 </html>

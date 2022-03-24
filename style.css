@@ -5,6 +5,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 :root{
     --light: #EEEEEEEE;
     --dark: #212121;
@@ -65,13 +69,13 @@ h2{
     letter-spacing: 2px;
 }
 
-.nav{
+.nav-links{
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.nav li{
+.nav-links li{
     list-style: none;
     padding: 10px 15px;
 
@@ -81,6 +85,63 @@ a{
     color: var(--dark);
     text-decoration: none;
 }
+
+.hamburguer{
+    display: none;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.hamburguer div{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background-color: var(--dark);
+    border-radius: 6px;
+    z-index: 1;
+
+    transform-origin: 0 0;
+
+    transition: 0.4s;
+}
+
+@media only screen and (max-width: 1024px){
+    .hamburguer{
+    display: block;
+    }
+
+    .nav-links{
+      --gap: 2em;
+
+      position: absolute;
+      inset: 67.4px 0 0 30%;
+
+      height: 92.7vh;
+      z-index: 1;
+
+      flex-direction: column;
+      padding: min(60vh, 20rem) 2em;
+
+      background-color: hsla(0, 0%, 12.94%,0.1);
+      backdrop-filter: blur(0.7rem);
+      -webkit-backdrop-filter: blur(0.7rem);
+
+      transform: translateX(100%);
+      transition: transform 350ms ease-in;
+    }
+    .nav-links[data-visible="true"]{
+      transform: translateX(0%);
+    }
+
+    .nav-links li{
+      padding: 10px;
+    }
+  }
 
 /* Main */
 .backgroundimg-container{
@@ -153,6 +214,7 @@ a{
     display: flex;
     align-items: center;
     margin: 0 auto;
+    width: 95%;
 }
 
 .circulo{
@@ -228,30 +290,59 @@ a{
     }
 }
 
-.form{
-    display: flex;
-}
-
-.form .conteudo{
+.form-container{
     margin: 0 auto;
-    display: flex;
-    padding: 20px 0;
+    padding: 1px;
 }
 
-.form h3{
+.form-container h3{
     color: white;
+    padding-bottom: 15px;
 }
 
-.form-group{
-    padding: 0 50px;
-}
-
-div.form input[type="text"]{
+.form-container input[type="text"]{
     width: 300px;
 }
 
-div.form button{
+.form-container button{
     padding: 5px 30px;
     margin-left: 10px;
     background-color: var(--cor03);
+}
+
+@media (max-width: 410px) {
+    .form-container button{
+        margin: 10px 0;
+    }
+}
+
+.img-container{
+    padding: 5px;
+    max-width: 1200px;
+    margin: 15px auto;
+}
+
+.img-row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.column{
+    flex: 1;
+
+    margin: 0 30px;
+
+    text-align: center;
+    line-height: 1.3em;
+}
+
+.column h2{
+    margin: 20px 0 10px 0;
+}
+
+@media (max-width: 1100px) {
+    .column p{
+        margin-top: 15px;
+    }
 }
