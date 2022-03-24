@@ -2,63 +2,71 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebDesign Express</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="header-container">
             <h2>Logomarca</h2>
-            <ul data-visible="false" class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-            <div class="hamburguer" aria-controls="nav-links" aria-expanded="false">
-                <div class="linha1"></div>
-                <div class="linha2"></div>
-                <div class="linha3"></div>
-            </div>
+            <nav>
+                <ul data-visible="false" class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+                <div class="hamburguer" aria-controls="nav-links" aria-expanded="false">
+                    <div class="linha1"></div>
+                    <div class="linha2"></div>
+                    <div class="linha3"></div>
+                </div>
+            </nav>
         </div>
     </header>
     <main>
         <section>
-            <div class="backgroundimg-container">
-                <div class="conteudo conteudo-800px">
-                    <h1>Web Design Express</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab totam eaque molestias, non iste aut maxime provident. Maxime, earum. Minus sequi non nisi ea fugit! Quos ipsum veritatis necessitatibus repellendus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab totam eaque molestias, non iste aut maxime provident. Maxime, earum. Minus sequi non nisi ea fugit! Quos ipsum veritatis necessitatibus repellendus!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iste ab ut hic maiores, ratione facere deleniti eos accusamus quae, ex cum obcaecati odit voluptates perspiciatis quam totam dignissimos autem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab totam eaque molestias, non iste aut maxime provident. Maxime, earum. Minus sequi non nisi ea fugit! Quos ipsum veritatis necessitatibus repellendus!</p>
-                    <button>Saiba mais</button>
+            <div class="home-container">
+                <div class="bg-container">
+                    <div class="conteudo conteudo-800px">
+                        <h1>Web Design Express</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab totam eaque molestias, non iste aut maxime provident. Maxime, earum. Minus sequi non nisi ea fugit! Quos ipsum veritatis necessitatibus repellendus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab totam eaque molestias, non iste aut maxime provident. Maxime, earum. Minus sequi non nisi ea fugit! Quos ipsum veritatis necessitatibus repellendus!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iste ab ut hic maiores, ratione facere deleniti eos accusamus quae, ex cum obcaecati odit voluptates perspiciatis quam totam dignissimos autem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab totam eaque molestias, non iste aut maxime provident. Maxime, earum. Minus sequi non nisi ea fugit! Quos ipsum veritatis necessitatibus repellendus!</p>
+                        <button>Saiba mais</button>
+                    </div>
                 </div>
             </div>
         </section>
         <section style="padding: 20px 0;">
-            <div class="conteudo conteudo-1200px">
-                <h2>Lorem Ipsum</h2>
-                <div class="flex">
-                    <div class="group">
-                        <i class="material-icons">check</i>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolorum aperiam facilis recusandae officiis tenetur veritatis nemo animi quae vero veniam consequuntur fugit itaque soluta, sed, eveniet nihil ipsa. Neque.</p>
-                    </div>
-                    <div class="group">
-                        <i class="material-icons">check</i>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam est expedita molestias, soluta, nisi maxime voluptatem distinctio eaque ullam dicta numquam consequuntur sint, ratione quas culpa molestiae laborum? Ipsa, error?</p>
-                    </div>
-                    <div class="group">
-                        <i class="material-icons">check</i>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis fugiat commodi consequatur obcaecati dolores harum id, ea, vel nihil illo animi. Porro quo eos eligendi ab nulla architecto, similique non.</p>
+            <div class="sobre-container">
+                <div class="conteudo conteudo-1200px">
+                    <h2>Experiência do usuário</h2>
+                    <div class="flex">
+                        <div class="group">
+                            <i class="material-icons">check</i>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolorum aperiam facilis recusandae officiis tenetur veritatis nemo animi quae vero veniam consequuntur fugit itaque soluta, sed, eveniet nihil ipsa. Neque.</p>
+                        </div>
+                        <div class="group">
+                            <i class="material-icons">check</i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam est expedita molestias, soluta, nisi maxime voluptatem distinctio eaque ullam dicta numquam consequuntur sint, ratione quas culpa molestiae laborum? Ipsa, error?</p>
+                        </div>
+                        <div class="group">
+                            <i class="material-icons">check</i>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis fugiat commodi consequatur obcaecati dolores harum id, ea, vel nihil illo animi. Porro quo eos eligendi ab nulla architecto, similique non.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section style="background-color: lightgray; padding: 20px 0;">
-            <div class="sss-container conteudo-800px">
+            <div class="sobre-container conteudo-800px">
                 <div class="esquerda">
-                    <h2>Lorem Ipsum 1</h2>
+                    <h2>Conheça nossa equipe</h2>
                     <div class="comentario">
                         <div class="circulo"></div>
                         <p>Lorem ipsum dolor <br> sit amet consectetur <br> adipisicing elit.</p>
@@ -70,7 +78,7 @@
                     <button>Ver mais</button>
                 </div>
                 <div class="direita">
-                    <h2>Lorem Ipsum 2</h2>
+                    <h2>Sobre</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum praesentium ab maiores sequi ex dolore magnam facilis eveniet, expedita cum, eos, quibusdam consequuntur porro fugiat rem quia velit repellat minus!</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fugit minima explicabo distinctio dolor adipisci, nostrum officia. Corporis perspiciatis, incidunt ut ratione dolor at neque ad, dolores quis commodi esse?</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fugit minima explicabo distinctio dolor adipisci, nostrum officia. Corporis perspiciatis, incidunt ut ratione dolor at neque ad, dolores quis commodi esse?</p>
@@ -81,16 +89,16 @@
             <div class="form-container">
                 <div class="conteudo">
                     <div class="form-group">
-                        <h3>Lorem Ipsum Form</h3>
+                        <h3>Inscreva-se na nossa lista</h3>
                     </div>
                     <input type="text">
-                    <button>Enter</button>
+                    <button>Enviar</button>
                 </div>
             </div>
         </section>
         <section>
             <div class="img-container">
-                <div class="img-row">
+                <div class="row">
                     <div class="column">
                         <img src="img/menina.webp" alt="WebDesign Express">
                         <h2>Lorem Ipsum</h2>
@@ -110,9 +118,34 @@
             </div>
         </section>
         <section style="background-color: var(--cor02);">
-            
+            <div class="social-container">
+                <div class="row">
+                    <div class="column social group">
+                        <p>Lorem ipsum dolor sit amet<br>
+                            Lorem ipsum dolor sit amet<br>
+                            Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <div class="column social group">
+                        <p>Lorem ipsum dolor sit amet<br>
+                        Lorem ipsum dolor sit amet<br>
+                        Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <div class="column social group">
+                        <p>Lorem ipsum dolor sit amet</p>
+                        <div class="social">
+                            <a href="#" target="_blank"><ion-icon name="logo-instagram" class="social-icon"></ion-icon></a>
+                            <a href="#" target="_blank" class="social-icon"><ion-icon name="logo-facebook"></ion-icon></a>
+                
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+    <footer>
+        <p>Todos os direitos Reservados</p>
+    </footer>
     <script src="main.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>

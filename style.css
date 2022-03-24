@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body{
@@ -12,15 +12,15 @@ body{
 :root{
     --light: #EEEEEEEE;
     --dark: #212121;
-    --cor01: aqua;
+    --cor01: #52aaa7;
     --cor02: rgb(81, 81, 185);
     --cor03: rgb(55, 55, 77);
+    --cor04: rgb(10, 15, 82);
 }
 
-/* Geral */
+/* Auxiliares */
 
 .conteudo{
-    text-align: center;
     margin: 30px auto;
 }
 
@@ -32,12 +32,18 @@ body{
     max-width: 1200px;
 }
 
+.group{
+    margin: 0 30px;
+}
+
 button{
     background-color: var(--cor01);
     color: white;
 
     border: none;
     border-radius: 2px;
+
+    cursor: pointer;
 }
 
 /*Scrollbar*/
@@ -67,6 +73,8 @@ button{
 
 h2{
     letter-spacing: 2px;
+    font-weight: normal;
+    font-size: 28px;
 }
 
 .nav-links{
@@ -79,6 +87,10 @@ h2{
     list-style: none;
     padding: 10px 15px;
 
+}
+
+.nav-links li:hover{
+    text-decoration: underline;
 }
 
 a{
@@ -119,9 +131,9 @@ a{
       --gap: 2em;
 
       position: absolute;
-      inset: 67.4px 0 0 30%;
+      inset: 70px 0 0 30%;
 
-      height: 92.7vh;
+      height: 112.8vh;
       z-index: 1;
 
       flex-direction: column;
@@ -144,54 +156,56 @@ a{
   }
 
 /* Main */
-.backgroundimg-container{
+
+.bg-container{
+    display: flex;
+    align-items: center;
+}
+.home-container{
     background-image: url(img/fundo01.webp);
     background-size: cover;
     background-position: center;  
 
     padding: 70px;
+
     box-shadow:inset 0 0 0 2000px #212121b6;
 }
 
-.backgroundimg-container h1{
+.bg-container h1{
     color: var(--cor01);
 
-    font-weight: lighter;
+    font-weight: normal;
+    font-size: 30px;
 
     margin-bottom: 30px;
+    text-align: center;
 }
 
-.backgroundimg-container p{
+.bg-container p{
     color: white;
     margin: 30px 0;
 }
 
-.backgroundimg-container button{
+.bg-container button{
     margin-top: 30px;
     padding: 15px 35px;
 }
 
 @media (max-width: 375px) {
-    .backgroundimg-container p{
+    .bg-container p{
         font-size: 12px;
-    }
-    .backgroundimg-container{
-        padding: 30px;
     }
 }
 
-.conteudo h2{
+.sobre-container .conteudo h2{
     color: var(--cor01);
+    text-align: center;
 }
 
 .flex{
     display: flex;
     text-align: center;
     margin: 30px;
-}
-
-.group{
-    margin: 0 30px;
 }
 
 @media (max-width: 768px) {
@@ -210,7 +224,7 @@ a{
     }
 }
 
-.sss-container{
+.sobre-container{
     display: flex;
     align-items: center;
     margin: 0 auto;
@@ -273,7 +287,7 @@ a{
 }
 
 @media (max-width: 900px) {
-    .sss-container{
+    .sobre-container{
         display: block;
     }
 
@@ -291,12 +305,14 @@ a{
 }
 
 .form-container{
+    display: flex;
     margin: 0 auto;
     padding: 1px;
 }
 
 .form-container h3{
     color: white;
+    text-align: center;
     padding-bottom: 15px;
 }
 
@@ -322,7 +338,7 @@ a{
     margin: 15px auto;
 }
 
-.img-row{
+.row{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -346,3 +362,32 @@ a{
         margin-top: 15px;
     }
 }
+
+@media (max-width: 667px) {
+    .social-container > .row{
+        display: block;
+    }
+}
+
+.social-container{
+    padding: 30px 0;
+}
+
+.social-icon{
+    font-size: 2.5em;
+    color: var(--light);
+}
+
+.social p{
+    color: var(--light);
+}
+
+/*Footer*/
+
+footer{
+    background-color: var(--cor04);
+    padding: 15px;
+    text-align: center;
+    color: var(--light);
+}
+
