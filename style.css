@@ -237,15 +237,9 @@ a{
     width: 95%;
 }
 
-.circulo{
-    background-color: gray;
-
-    border-radius: 50%;
-    border: 2px solid black;
-
+.comentario img{
     height: 50px;
     width: 50px;
-
     margin: 15px 10px 0 0;
 }
 
@@ -259,6 +253,17 @@ a{
 
 .comentario{
     display: flex;
+}
+
+.comentario h3{
+    font-style: italic;
+    font-size: 15px;
+    height: 15px;
+}
+
+.comentario > div{
+    display: flex;
+    flex-direction: column;
 }
 
 .esquerda button{
@@ -376,6 +381,8 @@ a{
     }
 }
 
+/* 3 Imagens */
+
 .img-container{
     padding: 5px;
     max-width: 1200px;
@@ -404,6 +411,10 @@ a{
 @media (max-width: 1100px) {
     .column p{
         margin-top: 15px;
+    }
+
+    .column {
+        margin-top: 20px;
     }
 }
 
