@@ -224,6 +224,8 @@ a{
     }
 }
 
+/* Sobre */
+
 .sobre-container{
     display: flex;
     align-items: center;
@@ -240,7 +242,7 @@ a{
     height: 50px;
     width: 50px;
 
-    margin: 5px 10px 0 0;
+    margin: 15px 10px 0 0;
 }
 
 .esquerda{
@@ -304,6 +306,8 @@ a{
     }
 }
 
+/* Form */
+
 .form-container{
     display: flex;
     margin: 0 auto;
@@ -318,17 +322,46 @@ a{
 
 .form-container input[type="text"]{
     width: 300px;
+    padding: 4px;
+}
+
+.form-container input[type="text"]:active{
+    border: none;
+}
+
+.form-container .icon{
+    color: var(--light);
+    font-size: 2em;
+    position: relative;
+    right: 10px;
+    bottom: 2px;
 }
 
 .form-container button{
     padding: 5px 30px;
-    margin-left: 10px;
     background-color: var(--cor03);
+}
+
+.form-group{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.form-icon{
+    background-color: var(--cor01);
+    padding: px;
+    color: var(--light);
+    font-size: 2em;
 }
 
 @media (max-width: 410px) {
     .form-container button{
         margin: 10px 0;
+    }
+
+    .form-group{
+        flex-direction: row;
     }
 }
 
