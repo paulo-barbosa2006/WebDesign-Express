@@ -133,7 +133,7 @@ a{
       position: absolute;
       inset: 70px 0 0 30%;
 
-      height: 112.8vh;
+      height: 100%;
       z-index: 1;
 
       flex-direction: column;
