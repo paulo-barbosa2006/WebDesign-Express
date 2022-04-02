@@ -9,6 +9,10 @@ body{
     overflow-x: hidden;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root{
     --light: #EEEEEEEE;
     --dark: #212121;
