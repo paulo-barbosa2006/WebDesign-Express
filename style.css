@@ -349,19 +349,26 @@ a{
 }
 
 .form-icon{
-    background-color: var(--cor01);
-    padding: px;
     color: var(--light);
     font-size: 2em;
+    margin-right: 5px;
 }
 
 @media (max-width: 410px) {
     .form-container button{
-        margin: 10px 0;
+        margin: 10px 100px;
     }
 
     .form-group{
-        flex-direction: row;
+        display: block;
+    }
+
+    .form-icon{
+        display: none;
+    }
+    .form-container input[type="text"]{
+        margin: 0 45px;
+        width: 75%;
     }
 }
 
