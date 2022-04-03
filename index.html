@@ -17,8 +17,8 @@
             <h2>Logomarca</h2>
             <nav>
                 <ul data-visible="false" class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
                 <div class="hamburguer" aria-controls="nav-links" aria-expanded="false">
@@ -37,7 +37,7 @@
                         <h1>Web Design</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab totam eaque molestias, non iste aut maxime provident. Maxime, earum. Minus sequi non nisi ea fugit! Quos ipsum veritatis necessitatibus repellendus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab totam eaque molestias, non iste aut maxime provident. Maxime, earum. Minus sequi non nisi ea fugit! Quos ipsum veritatis necessitatibus repellendus!</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iste ab ut hic maiores, ratione facere deleniti eos accusamus quae, ex cum obcaecati odit voluptates perspiciatis quam totam dignissimos autem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab totam eaque molestias, non iste aut maxime provident. Maxime, earum. Minus sequi non nisi ea fugit! Quos ipsum veritatis necessitatibus repellendus!</p>
-                        <button>Saiba mais</button>
+                        <button class="btn-bg">Saiba mais</button>
                     </div>
                 </div>
             </div>
@@ -99,8 +99,10 @@
                         <h3>Inscreva-se na nossa lista</h3>
                     </div>
                     <div class="form-group">
-                        <input type="text">
-                        <button>Enviar</button>
+                        <form>
+                            <input type="text">
+                            <input type="submit" name="acao" value="Enviar!">
+                        </form>
                     </div>
                 </div>
             </div>
@@ -112,16 +114,19 @@
                         <img src="img/menina.webp" alt="WebDesign Express">
                         <h2>Lorem Ipsum</h2>
                         <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Velit eaque possimus itaque a provident accusamus..</p>
+                        <hr>
                     </div>
                     <div class="column">
                         <img src="img/menina.webp" alt="WebDesign Express">
                         <h2>Lorem Ipsum</h2>
                         <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Velit eaque possimus itaque a provident accusamus.</p>
+                        <hr>
                     </div>
                     <div class="column">
                         <img src="img/menina.webp" alt="WebDesign Express">
                         <h2>Lorem Ipsum</h2>
                         <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Velit eaque possimus itaque a provident accusamus.</p>
+                        <hr>
                     </div>
                 </div>
             </div>
@@ -130,17 +135,17 @@
             <div class="social-container">
                 <div class="row">
                     <div class="column social group">
-                        <p>Lorem ipsum dolor sit amet<br>
-                            Lorem ipsum dolor sit amet<br>
+                        <p><b>Aonde estamos?</b><br>
+                            R. Mateus Cardoso<br>
                             Lorem ipsum dolor sit amet</p>
                     </div>
                     <div class="column social group">
-                        <p>Lorem ipsum dolor sit amet<br>
+                        <p><b>Links Úteis</b><br>
                         Lorem ipsum dolor sit amet<br>
                         Lorem ipsum dolor sit amet</p>
                     </div>
                     <div class="column social group">
-                        <p>Lorem ipsum dolor sit amet</p>
+                        <p><b>Acompanhe a gente!</b></p>
                         <div class="social">
                             <a href="#" target="_blank"><ion-icon name="logo-instagram" class="social-icon"></ion-icon></a>
                             <a href="#" target="_blank" class="social-icon"><ion-icon name="logo-facebook"></ion-icon></a>
