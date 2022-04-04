@@ -14,3 +14,8 @@ hamburguer.addEventListener("click", function() {
         hamburguer.setAttribute("aria-expanded", false);
     }
 });
+
+function setTopo(){
+    $(window).scrollTop(0);
+}
+$(window).bind('scroll', setTopo);
