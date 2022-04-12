@@ -648,3 +648,94 @@ footer{
 #informacao2 p{
     margin: 20px 0;
 }
+
+/* Página de contato */
+
+#pag-contato{
+    margin: 30px 0;
+}
+
+#pag-contato p:nth-child(1){
+    background-color: lightgray;
+    color: gray;
+    padding: 10px;
+}
+
+.form-contato{
+    margin: 10px 0;
+}
+
+.form-contato input, .form-contato textarea{
+    height: 60px;
+    width: 100%;
+
+    margin: 10px 0px;
+    padding-left: 10px;
+
+    border: 1px solid gray;
+}
+
+.form-contato textarea{
+    padding-top: 18px;
+    resize: vertical;
+}
+
+.form-contato input[type="text"]{
+    width: 49%;
+    display: inline-block
+}
+
+.title-icon{
+    justify-content: center;
+    display: flex;
+}
+
+#inbox .column:nth-child(2){
+    max-width: 500px;
+}
+
+#inbox ion-icon{
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.num-contato{
+    background-color: var(--cor02);
+    margin: 10px auto;
+    padding: 5px 0;
+
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+
+    color: white;
+}
+
+@media (max-width: 956px) {
+    #inbox .row{
+        flex-direction: column;
+    }
+
+    #inbox .column:nth-child(2){
+        margin: 0 auto;
+    }
+
+    .num-contato{
+        width: 400px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .num-contato{
+        width: 200px;
+    }
+}
+
+@media (max-width: 500px) {
+    .form-contato input[type="text"]{
+        width: 100%;
+        display: block;
+    }
+}

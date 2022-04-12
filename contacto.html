@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDesign Express</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h2><a href="/index.html">Logomarca</a></h2>
+            <nav>
+                <ul data-visible="false" class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li class="active"><a href="contacto.html">Contato</a></li>
+                </ul>
+                    <div class="hamburguer" aria-controls="nav-links" aria-expanded="false">
+                        <div class="linha1"></div>
+                        <div class="linha2"></div>
+                        <div class="linha3"></div>
+                    </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="topo" class="bg-min">
+            <div class="topo-container">
+                <h1>Contato</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus natus facere, eligendi impedit cumque, dicta quo est earum nihil.</p>
+            </div>
+        </section>
+        <section id="inbox">
+            <div class="row" id="pag-contato">
+                <div class="column">
+                    <div>
+                        <p>Iremos responder o mais rápido possível!</p>
+                    </div>
+                    <div class="form-contato">
+                        <form action="">
+                            <input type="text" placeholder="Primeiro nome">
+                            <input type="text" placeholder="Último nome">
+                            <input type="email" placeholder="Seu email">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Sua mensagem..."></textarea>
+                            <input type="submit" value="Enviar" class="btn-bg" style="background-color: var(--cor02); font-size:20px;">
+                        </form>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="title-icon">
+                        <ion-icon name="chatboxes" class="icon"></ion-icon>
+                        <h3>Fale com a nossa equipe!</h3>
+                    </div>
+                    <p style="max-width: 300px; margin: 10px auto;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure temporibus corrupti dolor libero.</p>
+                    <div class="num-contato">
+                        <ion-icon name="call"></ion-icon>
+                        <span>xxxx-xxxx</span>
+                    </div>
+                    <div class="num-contato">
+                        <ion-icon name="call"></ion-icon>
+                        <span>xxxx-xxxx</span>
+                    </div>
+                    <div class="num-contato">
+                        <ion-icon name="call"></ion-icon>
+                        <span>xxxx-xxxx</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacto" style="background-color: var(--cor02);">
+            <div class="social-container">
+                <div class="row">
+                    <div class="column social group">
+                        <p><b>Aonde estamos?</b><br>
+                            R. Mateus Cardoso<br>
+                            Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <div class="column social group">
+                        <p><b>Links Úteis</b><br>
+                        Lorem ipsum dolor sit amet<br>
+                        Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <div class="column social group">
+                        <p><b>Acompanhe a gente!</b></p>
+                        <div class="social">
+                            <a href="#" target="_blank"><ion-icon name="logo-instagram" class="social-icon"></ion-icon></a>
+                            <a href="#" target="_blank" class="social-icon"><ion-icon name="logo-facebook"></ion-icon></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Todos os direitos Reservados - Paulo Barbosa</p>
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>
